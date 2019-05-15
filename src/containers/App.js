@@ -5,12 +5,8 @@ import SearchBox from '../components/SearchBox';
 import './App.css'
 import Scroll from '../components/Scroll';
 
-class App extends Component {
-	constructor() {
-		super();
-		this.state = {
-			robots: [
-  {
+
+let list = [ {
     "id": 1,
     "course": "Web Development",
     "des": "This is web related front end and backend course"
@@ -59,12 +55,24 @@ class App extends Component {
     "id": 10,
     "course": "nodejs Development",
     "des": "This is web related front end and backend course"
-  }],
+  }]
+
+class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			robots: [],
 			searchfield: ''
 		}
 		// console.log('constructor');
 	}
 
+	
+	componentDidMount() {
+		
+			this.setState({robots: list});
+		
+	}
 	
 	
 	onSearchChange = (event) => {
