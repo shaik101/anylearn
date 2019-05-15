@@ -91,7 +91,10 @@ class App extends Component {
 			return (
 				<div className='tc'>
 					<h1 className="f1">anylearn</h1>
-					<span><big>Contact Us : <b>+918688706074</b></big></span>
+					<span><big><a href="https://www.cognitoforms.com/ctc15/WelcomeToMostTrendingOnlineLearnings"><b>Register Here! &nbsp </b> </a></big></span>
+					
+					<big><a href="https://api.whatsapp.com/send?phone=919550579599&text=Hi AnyLearn!"><b> &nbsp WhatsApp Link!</b> </a></big>
+				
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
 					<CardList robots={filteredRobots} />
