@@ -91,6 +91,7 @@ class App extends Component {
 			return (
 				<div className='tc'>
 					<h1 className="f1">anylearn</h1>
+					<span><big>Contact Us &nbsp : &nbsp <b>+918919538130</b></big></span>
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
 					<CardList robots={filteredRobots} />
