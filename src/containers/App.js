@@ -93,7 +93,7 @@ class App extends Component {
 					<h1 className="f1">anylearn</h1>
 					<span><big><a href="https://www.cognitoforms.com/Anylearn1/WelomeToAnylearn"><b>Register Here! </b> </a></big>
 					
-					|<big><a href="https://api.whatsapp.com/send?phone=919550579599&text=Hi AnyLearn!"><b> WhatsApp Link!</b> </a></big>
+					<big>|<a href="https://api.whatsapp.com/send?phone=919550579599&text=Hi AnyLearn!"><b> WhatsApp Link!</b> </a></big>
 					</span>
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
