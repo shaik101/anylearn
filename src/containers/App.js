@@ -16,7 +16,7 @@ class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch('https://jsonplaceholder.typicode.com/users')
+		fetch('https://api.myjson.com/bins/1abw76')
 		.then(response => {
 			return response.json();
 		}).then(users => {
@@ -32,7 +32,7 @@ class App extends Component {
 	render() {
 		const { robots, searchfield } = this.state;
 		const filteredRobots = robots.filter(robot => {
-		return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+		return robot.course.toLowerCase().includes(searchfield.toLowerCase());
 		});
 		if (!robots.length) {
 			return <h1 className="tc">Loading...</h1>
@@ -40,7 +40,7 @@ class App extends Component {
 		// console.log('render');
 			return (
 				<div className='tc'>
-					<h1 className="f1">RoboFriends</h1>
+					<h1 className="f1">anylearn</h1>
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
 					<CardList robots={filteredRobots} />
