@@ -90,7 +90,7 @@ class App extends Component {
 		// console.log('render');
 			return (
 				<div className='tc'>
-					<h1 className="f1">anylearn</h1>
+					<h1 className="f1">any learn</h1>
 					<span><big>Contact Us : <b>+918688706074</b></big></span>
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
