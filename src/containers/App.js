@@ -34,7 +34,10 @@ class App extends Component {
 		const filteredRobots = robots.filter(robot => {
 		return robot.course.toLowerCase().includes(searchfield.toLowerCase());
 		});
-		
+		if (!robots.length) {
+			return <h1 className="tc">Loading...</h1>
+		} else {
+		// console.log('render');
 			return (
 				<div className='tc'>
 					<h1 className="f1">anylearn</h1>
@@ -46,6 +49,6 @@ class App extends Component {
 			);
 		}
 	}
-
+}
 
 export default App;
