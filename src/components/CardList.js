@@ -7,14 +7,13 @@ const CardList = ({robots}) => {
 			{
 				robots.map((user, i) => {
 				return (
-				<a href="https://www.udemy.com/" >
 					<Card
 					 key={i}
 					 id={user.id}
 					 name={user.course}
 					 email={user.des}
 					 /> 
-				</a>
+				
 					 );
 				})
 			}
